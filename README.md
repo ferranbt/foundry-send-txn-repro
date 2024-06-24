@@ -6,7 +6,7 @@ $ cargo run
 
 This script:
 
-- Sends a transaction to the eth_sendTransaction endpoint of an Avail node.
+- Sends a transaction to the eth_sendTransaction endpoint of an Anvil node.
 - Outputs the hash of the transaction.
 - Returns the JSON for the transaction.
 
@@ -20,4 +20,4 @@ This script:
 
 - Decodes the JSON file and outputs the transaction hash and the signing hash.
 
-The transaction hash from Avail does not match the transaction hash from Geth.
+The transaction hash from Anvil does not match the transaction hash from Geth.
