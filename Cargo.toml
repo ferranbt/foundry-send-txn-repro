@@ -1,0 +1,21 @@
+[package]
+name = "foundry-send-txn-repro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.32.0", features = ["rt-multi-thread"] }
+alloy-primitives = "0.7.6"
+alloy-rlp = "0.3.4"
+alloy-chains = { version = "0.1.15", feature = ["serde", "rlp", "arbitrary"] }
+alloy-provider = { git = "https://github.com/alloy-rs/alloy", version = "0.1" }
+alloy-rpc-types = { git = "https://github.com/alloy-rs/alloy", version = "0.1" }
+alloy-json-rpc = { git = "https://github.com/alloy-rs/alloy", version = "0.1" }
+alloy-transport-http = { git = "https://github.com/alloy-rs/alloy", version = "0.1" }
+alloy-network = { git = "https://github.com/alloy-rs/alloy", version = "0.1" }
+alloy-transport = { git = "https://github.com/alloy-rs/alloy", version = "0.1" }
+alloy-node-bindings = { git = "https://github.com/alloy-rs/alloy", version = "0.1" }
+alloy-consensus = { git = "https://github.com/alloy-rs/alloy", version = "0.1", features = ["kzg"] }
+alloy-serde = { git = "https://github.com/alloy-rs/alloy", version = "0.1" }
+serde = "1.0.188"
+serde_json = "1.0.105"
